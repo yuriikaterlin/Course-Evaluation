@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1,900&display=swap');
 
-
-main{
-  font-family: Montserrat, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+.container {
   margin: 0 auto;
   width: 80%;
+}
+.poligon {
+  background: #E2E6F4;
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+
+main{
+
     header{
       display: flex;
       justify-content: space-between;
@@ -20,6 +27,7 @@ main{
         &>li{
           margin-left: 2rem;
           align-self: baseline;
+          cursor: pointer;
         }
       }
     }
