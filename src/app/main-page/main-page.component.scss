@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200-900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .container {
   margin: 2em auto;
   width: 80%;
@@ -161,27 +160,27 @@ main {
         font-size: 1.2em;
       }
 
-      .rating-list {
-        li {
-          font-size: 20px;
-          float: right;
-          color: #ddd;
-          padding: 10px 5px;
-          &:hover {
-            color: #ffd700;
-            ~ {
-              li {
-                color: #ffd700;
-              }
-            }
-          }
-        }
-        li.selected {
-          color: #ffd700;
-        }
-        display: inline-block;
-        list-style: none;
-      }
+      // .rating-list {
+      //   li {
+      //     font-size: 20px;
+      //     float: right;
+      //     color: #ddd;
+      //     padding: 10px 5px;
+      //     &:hover {
+      //       color: #ffd700;
+      //       ~ {
+      //         li {
+      //           color: #ffd700;
+      //         }
+      //       }
+      //     }
+      //   }
+      //   li.selected {
+      //     color: #ffd700;
+      //   }
+      //   display: inline-block;
+      //   list-style: none;
+      // }
 
       .price {
         padding-top: 2em;
