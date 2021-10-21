@@ -3,18 +3,23 @@
 .container {
   margin: 0 auto;
   width: 80%;
-  height: 900px;
+  
 }
 .poligon {
   background: #E2E6F4;
   border-top-left-radius: 200px;
   border-bottom-right-radius: 200px;
-  width: 100vh;
+  width: 100%;
 }
 
 main{
 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
     header{
+      margin-top: 2em;
       display: flex;
       justify-content: space-between;
       &>.logo{
@@ -30,6 +35,17 @@ main{
           margin-left: 2rem;
           align-self: baseline;
           cursor: pointer;
+
+          &>a:link, a:visited{
+            text-decoration: none;
+            color: #211D4D;
+            transition: padding-bottom 0.25s ease-in-out;
+
+          }
+          &>a:hover{
+            border-bottom: 2px solid #1295C0;
+            padding-bottom: 5px;
+          }
         }
       }
     }
@@ -42,43 +58,93 @@ main{
 
       &>.layout-info{
         height: 100%;
-        width: 45vw;
+        max-width: 55vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 1em;
         flex-shrink: 1;
         
 
         &>.hero-header {
-          font-size: 3em;
+          min-width: 400px;
+          font-size: 2.5em;
           font-weight: 900;
           line-height: 1.5em;
+          letter-spacing: 1px;
+          margin-bottom: 2em;
         }
         &>.hero-paragraph{
-          margin: 2em 0 0 0;
           font-size: 1.2em;
-          line-height: 1.5em;
+          line-height: 1.8em;
+          letter-spacing: 1px;
+
         }
 
-        &>.btn {
-          border: none;
-          margin: 2em auto;
-          width: 10em;
-          height: 2em;
-          font-size: 1.3em;
-          border-radius: 30px;
-          background: #1295C0;
-          color: #fff;
+        &>.paragraph {
+          line-height: 1.5em;
         }
 
       }
       &>.layout-photo img{
         margin-top: 3rem;
-        width: 40vw;
+        width: 45vw;
         flex-shrink: 2;
         filter: drop-shadow(0 0 5px rgba(161, 160, 160, 0.8));
       }
     }
+    &>.btn {
+      border: none;
+      margin: 4em auto;
+      width: 15em;
+      height: 2em;
+      font-size: 1.3em;
+      font-weight: 600;
+      border-radius: 30px;
+      background: #1295C0;
+      color: #fff;
+      cursor: pointer;
+      transition: box-shadow 0.25s ease;
+    }
+
+    &>.btn:hover{
+      box-shadow: inset 0 0 4px #fff;
+    }
+
+}
+
+.free-course{
+  
+  background-image: url(../../assets/free-pic.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &>header{
+    &>h2{
+      font-size: 2em;
+      padding: 2em 0 5em 0;
+      align-self: start;
+    }
+  }
+
+  &>.layout {
+    max-width: 500px;
+    line-height: 2em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    align-self: end;
+
+    &>.text p{
+      padding: 0 4em 4em 0;
+      font-weight: 500;
+    }
+  }
+  
 
 }

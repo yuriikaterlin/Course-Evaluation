@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1,900&display=swap');
+
+* {
+  margin: 0;
+}
+
 body {
   background: linear-gradient(900deg, rgba(226, 230, 244, 0.8) 8.72%, rgba(245, 245, 245, 0) 90.52%);
   font-family: Montserrat, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
